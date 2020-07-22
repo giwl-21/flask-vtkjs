@@ -1,0 +1,24 @@
+import React, { Component } from 'react';
+
+export default class Controller extends Component {
+    render() {
+       return (
+         <table>
+         <tr>
+            <td>
+               <select class='representations' style="width: 100%">
+               <option value='0'>Points</option>
+               <option value='1'>Wireframe</option>
+               <option value='2' selected>Surface</option>
+               </select>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <input class='resolution' type='range' min='4' max='80' value='6' />
+            </td>
+         </tr>
+         </table>       
+      )
+   }
+}
