@@ -141,3 +141,4 @@ yarn-error.log*
 .npm/
 yarn.lock
 templates/public/bundle.js
+templates/public/bundle.js
