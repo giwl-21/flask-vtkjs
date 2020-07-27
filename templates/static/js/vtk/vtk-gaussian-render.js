@@ -80,7 +80,7 @@ export function importVTK(path){
             const imageData = reader.getOutputData(0);
             
             console.log(imageData);
-            const dataArray = imageData.getPointData().getScalars() || imageData.getPointData().getArrays()[0];            ;
+            const dataArray = imageData.getPointData().getScalars() || imageData.getPointData().getArrays()[0];        
             const dataRange = dataArray.getRange();
             
             globalDataRange[0] = dataRange[0];
@@ -129,13 +129,14 @@ export function importVTK(path){
             actor.getProperty().setSpecularPower(8.0);
             
             // ------  CONFIGUREING WIDGET ---------------
-
+            // Somehow necessaryt for viewing???
+            
             const widget = vtkVolumeController.newInstance({
                 size: [400, 150],
                 rescaleColorMap: true,
             });
             widget.setContainer(widgetContainer);
-            widget.setupContent(renderWindow, actor, true/*is background dark?*/);
+            widget.setupContent(renderWindow, actor, true);
             // setUpContent above sets the size to the container.
             // We need to set the size after that.
             // controllerWidget.setExpanded(false);
@@ -145,7 +146,7 @@ export function importVTK(path){
 
             // rendering
             widget.render();
-
+            
             renderer.resetCamera();
             renderer.getActiveCamera().elevation(70);
             renderWindow.render();
