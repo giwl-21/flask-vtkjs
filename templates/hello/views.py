@@ -4,5 +4,8 @@ hello_blueprint = Blueprint('hello',__name__)
 @hello_blueprint.route('/')
 @hello_blueprint.route('/hello')
 def index():
-    path = '../../../public/data_object.vti'
-    return render_template("index.html", path = path)
+    return render_template("index.html")
+
+@hello_blueprint.route('/mother')
+def mother():
+    return render_template("mother.html")

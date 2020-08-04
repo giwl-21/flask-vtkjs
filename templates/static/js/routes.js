@@ -1,11 +1,13 @@
 import React from 'react';
-import { HashRouter, Route, hashHistory } from 'react-router-dom';
-import Example from './components/Layout-Button';
+import { BrowserRouter, Route, hashHistory } from 'react-router-dom';
+import Home from './components/Home';
+import Mother from './components/Mother';
 // import more components
 export default (
-    <HashRouter history={hashHistory}>
+    <BrowserRouter history={hashHistory}>
      <div>
-      <Route path='/' component={Example} />
+      <Route exact path='/' component={Home} />
+      <Route path='/mother' component={Mother}/>
      </div>
-    </HashRouter>
+    </BrowserRouter>
 );

@@ -16,15 +16,15 @@ export default class Example extends Component {
   }
 
   render() {
-    return (/*
+    return (
       <LayoutButton
         selectedCell={this.state.selectedCell}
         onChange={cell => this.setState({ selectedCell: cell })}
-      />*/
-      <Viewer
+      />
+      /*<Viewer
         selectedCell={this.state.selectedCell}
         onChange={cell => this.setState({ selectedCell: cell })}
-      />
+      />*/
     );
   }
 }
