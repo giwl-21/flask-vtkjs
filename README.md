@@ -1,6 +1,7 @@
 # superapp
+##### Summer 2020
 
-This is an isolated Flask.py web-server environment to build ECMAScript apps on.  
+This is an isolated Flask.py web-server environment to build ECMAScript apps on.  Built with the sole purpose of contributing to OpenVessel's MVP.
 
 #### Apps so far:
 * 3d viewer for VTK files
