@@ -1,5 +1,11 @@
 # superapp
 
+This is an isolated Flask.py web-server environment to build ECMAScript apps on.  
+
+#### Apps so far:
+* 3d viewer for VTK files
+* React router
+
 ### To build:
 
 cd to the root and run the superenv enviornment inside python, then do <code> pip install flask </code>
