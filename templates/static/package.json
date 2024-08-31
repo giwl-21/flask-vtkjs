@@ -21,7 +21,7 @@
     "kw-web-suite": "^10.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "webpack": "^4.43.0",
+    "webpack": "^5.94.0",
     "@ohif/viewer": "^4.2.7",
     "autoprefixer": "^9.8.4",
     "css-loader": "^3.6.0",
